@@ -8,7 +8,9 @@
   outputs = {
     self,
     nixpkgs,
+    ejovo,
   }: {
+    pname = "ejovo";
     # defaultPackage.x86_64-linux = import ./default.nix {pkgs = nixpkgs;};
     packages.x86_64-linux.fehWrapper = import ./default.nix {pkgs = nixpkgs;};
   };
