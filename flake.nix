@@ -10,7 +10,7 @@
     nixpkgs,
   }: {
     defaultPackage.x86_64-linux = import ./default.nix {
-      pkgs = import nixpkgs {system = "x84_64-linux";};
+      pkgs = import nixpkgs {system = "x86_64-linux";};
     };
   };
 }
