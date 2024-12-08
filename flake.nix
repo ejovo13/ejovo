@@ -3,14 +3,19 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    libejovo.url = "github:ejovo13/libejovo";
   };
 
   outputs = {
     self,
     nixpkgs,
-  }: {
-    packages.x86_64-linux.default = import ./default.nix {
-      pkgs = import nixpkgs {system = "x86_64-linux";};
+    libejovo,
+  }: let
+    fehWrapper = import ./default.nix {pkgs = import nixpkgs {system = "x86_64-linux";};};
+  in {
+    packages.x86_64-linux = {
+      fehWrapper = fehWrapper;
+      libejovo = libejovo;
     };
   };
 }
