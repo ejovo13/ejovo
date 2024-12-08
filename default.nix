@@ -3,7 +3,7 @@
 pkgs.stdenv.mkDerivation {
   pname = "feh-with-action1";
   version = "1.0";
-  src = ./.; # No source since this is just a wrapper.
+  src = ./.;
 
   buildInputs = [pkgs.makeWrapper pkgs.feh pkgs.xclip];
 
