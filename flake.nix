@@ -5,7 +5,10 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = {nixpkgs}: {
+  outputs = {
+    self,
+    nixpkgs,
+  }: {
     defaultPackage.x86_64-linux = import ./default.nix {
       pkgs = import nixpkgs {system = "x84_64-linux";};
     };
