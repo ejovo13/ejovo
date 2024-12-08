@@ -5,13 +5,9 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    ejovo,
-  }: {
-    pname = "ejovo";
-    # defaultPackage.x86_64-linux = import ./default.nix {pkgs = nixpkgs;};
-    packages.x86_64-linux.fehWrapper = import ./default.nix {pkgs = nixpkgs;};
+  outputs = {nixpkgs}: {
+    defaultPackage.x86_64-linux = import ./default.nix {
+      pkgs = import nixpkgs {system = "x84_64-linux";};
+    };
   };
 }
