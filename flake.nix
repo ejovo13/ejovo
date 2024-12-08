@@ -15,7 +15,7 @@
   in {
     packages.x86_64-linux = {
       fehWrapper = fehWrapper;
-      libejovo = libejovo;
+      libejovo = libejovo.packages.x86_64-linux.default;
     };
   };
 }
