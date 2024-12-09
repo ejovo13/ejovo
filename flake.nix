@@ -20,7 +20,7 @@
     packages.x86_64-linux = {
       fehWrapper = fehWrapper;
       libejovo = libejovo.packages.x86_64-linux.default;
-      image-to-ascii = image-to-ascii.x86_64-linux.default;
+      image-to-ascii = image-to-ascii.packages.x86_64-linux.default;
       # cmakeWrapper = cmakeWrapper;
     };
   };
