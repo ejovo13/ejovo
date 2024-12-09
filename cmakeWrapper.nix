@@ -3,7 +3,15 @@
 pkgs.stdenv.mkDerivation {
   pname = "cmakeWrapper";
   version = "0.1.0";
-  src = null; # No source since this is just a wrapper.
+  src = ./.; # No source since this is just a wrapper.
+
+  # This effectively makes a derivation with no source
+  unpackPhase = "true";
+
+  # Else the pkgs.cmake will automatically run cmake commands during
+  # these phases
+  configurePhase = "true";
+  buildPhase = "true";
 
   buildInputs = [pkgs.makeWrapper pkgs.cmake];
 
