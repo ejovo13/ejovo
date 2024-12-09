@@ -23,11 +23,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1733708447,
-        "narHash": "sha256-EQpilL1x6OY18268Z9rtccOZpmaIJTkS9FNf94WsjdE=",
+        "lastModified": 1733711047,
+        "narHash": "sha256-yRSF0kY+P1xp5RKEdED1BZ9zRtIMY3SDUmhBROxFJv4=",
         "owner": "ejovo13",
         "repo": "libejovo",
-        "rev": "3c651f6e06fa68856d4b254c16e8b1474fc40b9a",
+        "rev": "5e4d0e3ddfce642b9c17f6491638939761b8602e",
         "type": "github"
       },
       "original": {
