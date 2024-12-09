@@ -15,11 +15,11 @@ pkgs.stdenv.mkDerivation {
 
   buildInputs = [pkgs.makeWrapper pkgs.cmake];
 
-  installPhase = ''
-    mkdir -p $out/bin
-    makeWrapper ${pkgs.cmake}/bin/cmake $out/bin/cmake \
-      --add-flags "-DCMAKE_EXPORT_COMPILE_COMMANDS=1"
-  '';
+  # installPhase = ''
+  #   mkdir -p $out/bin
+  #   makeWrapper ${pkgs.cmake}/bin/cmake $out/bin/cmake \
+  #     --add-flags "-DCMAKE_EXPORT_COMPILE_COMMANDS=1"
+  # '';
 
   meta = with pkgs.lib; {
     description = "Wrapped cmake command to build compilation_commands.json for clangd.";

@@ -13,12 +13,12 @@
   }: let
     # TODO: Move this elsewhere
     fehWrapper = import ./default.nix {pkgs = import nixpkgs {system = "x86_64-linux";};};
-    cmakeWrapper = import ./cmakeWrapper.nix {pkgs = import nixpkgs {system = "x86_64-linux";};};
+    # cmakeWrapper = import ./cmakeWrapper.nix {pkgs = import nixpkgs {system = "x86_64-linux";};};
   in {
     packages.x86_64-linux = {
       fehWrapper = fehWrapper;
       libejovo = libejovo.packages.x86_64-linux.default;
-      cmakeWrapper = cmakeWrapper;
+      # cmakeWrapper = cmakeWrapper;
     };
   };
 }
