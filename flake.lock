@@ -1,15 +1,33 @@
 {
   "nodes": {
-    "libejovo": {
+    "image-to-ascii": {
       "inputs": {
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1733699138,
-        "narHash": "sha256-8VKK0VdI/eYxA/g3cBv8Xv6BZM6ZQADKrND10QQJl4o=",
+        "lastModified": 1733708331,
+        "narHash": "sha256-HQog8lCMgpOyMmdibuM1YqQW0irAvLvX7JO+vFXd9QU=",
+        "owner": "ejovo13",
+        "repo": "image-to-ascii",
+        "rev": "8c846ff070f9bd738707e61d81244ace9c24023b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ejovo13",
+        "repo": "image-to-ascii",
+        "type": "github"
+      }
+    },
+    "libejovo": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1733708447,
+        "narHash": "sha256-EQpilL1x6OY18268Z9rtccOZpmaIJTkS9FNf94WsjdE=",
         "owner": "ejovo13",
         "repo": "libejovo",
-        "rev": "a79ed96c6b74ad65ec4e2c41edffd7b65ede15b3",
+        "rev": "3c651f6e06fa68856d4b254c16e8b1474fc40b9a",
         "type": "github"
       },
       "original": {
@@ -50,10 +68,27 @@
         "type": "github"
       }
     },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1733581040,
+        "narHash": "sha256-Qn3nPMSopRQJgmvHzVqPcE3I03zJyl8cSbgnnltfFDY=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "22c3f2cf41a0e70184334a958e6b124fb0ce3e01",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
+        "image-to-ascii": "image-to-ascii",
         "libejovo": "libejovo",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_3"
       }
     }
   },

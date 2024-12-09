@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     libejovo.url = "github:ejovo13/libejovo";
-    image-to-asciit.url = "github:ejovo13/image-to-ascii";
+    image-to-ascii.url = "github:ejovo13/image-to-ascii";
   };
 
   outputs = {
